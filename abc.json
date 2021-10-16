@@ -1,0 +1,57 @@
+{
+  "subjects":[ 
+   {
+       "id": "4", 
+       "heading":"DBMS ",  
+       "Course": "No ",
+       "Type": "Roadmap ",
+       "Resource": "Whimsical",
+       "Leaf Node": "Yes",
+       "Link":"https://whimsical.com/dbms-roadmap-by-love-babbar-GXtP7RiRDetypoUtnGC9bA"
+   }   
+   ,
+   {
+       "id": "5", 
+       "heading":"OOP",  
+       "Course": "No ",
+       "Type": "Roadmap ",
+       "Resource": "Whimsical",
+       "Leaf Node": "Yes",
+       "Link":"https://whimsical.com/object-oriented-programming-cheatsheet-by-love-babbar-YbSgLatbWQ4R5paV7EgqFw"
+   },
+   {
+       "id": "6", 
+       "heading":"CN  ",  
+       "Course": "No ",
+       "Type": "Roadmap ",
+       "Resource": "Whimsical",
+       "Leaf Node": "Yes",
+       "Link":"https://whimsical.com/networking-cheatsheet-by-love-babbar-FcLExFDezehhfsbDPfZDBv"
+   },
+   {
+        "id": "3",
+        "heading": "Placement ",
+        "course": "Whimscal Maps",
+        "resource": "Rodamaps",
+        "Link": " https://whimsical.com/4th-year-roadmap-to-dream-placement-WB2HTZixtsohXoDcvr6Me7",
+        "leafnode": "true"
+    },
+   {
+            "id": "2",
+            "heading": "Algorithms ",
+            "course": "Whimscal Maps",
+            "resource": "Rodamaps",
+            "Link": " https://whimsical.com/4th-year-roadmap-to-dream-placement-WB2HTZixtsohXoDcvr6Me7",
+            "leafnode": "true"
+    },
+    {
+                "id": "3",
+                "heading": "Data Structure",
+                "course": "Whimscal Maps",
+                "resource": "Rodamaps",
+                "Link": " https://whimsical.com/4th-year-roadmap-to-dream-placement-WB2HTZixtsohXoDcvr6Me7",
+                "leafnode": "true"
+    }
+
+  ]
+}
