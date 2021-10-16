@@ -1,0 +1,41 @@
+{
+   "subjects":[ 
+    {
+        "id": "1", 
+        "heading":"DBMS Roadmap By Love Babbar ",  
+        "Course": "No ",
+        "Type": "Roadmap ",
+        "Resource": "Whimsical",
+        "Leaf Node": "Yes",
+        "Link":"https://whimsical.com/dbms-roadmap-by-love-babbar-GXtP7RiRDetypoUtnGC9bA"
+    }   
+    ,
+    {
+        "id": "2", 
+        "heading":"OOPS Roadmap By Love Babbar ",  
+        "Course": "No ",
+        "Type": "Roadmap ",
+        "Resource": "Whimsical",
+        "Leaf Node": "Yes",
+        "Link":"https://whimsical.com/object-oriented-programming-cheatsheet-by-love-babbar-YbSgLatbWQ4R5paV7EgqFw"
+    },
+    {
+        "id": "3", 
+        "heading":"CN Roadmap By Love Babbar ",  
+        "Course": "No ",
+        "Type": "Roadmap ",
+        "Resource": "Whimsical",
+        "Leaf Node": "Yes",
+        "Link":"https://whimsical.com/networking-cheatsheet-by-love-babbar-FcLExFDezehhfsbDPfZDBv"
+    },
+    {
+         "id": "4",
+         "heading": "4th Year Placemnet Preperation By Love Babbar",
+         "course": "Whimscal Maps",
+         "resource": "Rodamaps",
+         "link": " https://whimsical.com/4th-year-roadmap-to-dream-placement-WB2HTZixtsohXoDcvr6Me7",
+         "leafnode": "true"
+        }
+
+   ]
+}
