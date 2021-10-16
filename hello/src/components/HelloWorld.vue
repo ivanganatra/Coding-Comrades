@@ -5,21 +5,21 @@
 
 <!-- Header -->
 <header class="w3-container w3-red w3-center" style="padding:128px 16px">
-  <h1 class="w3-margin w3-jumbo">START PAGE</h1>
-  <p class="w3-xlarge">Template by w3.css</p>
-  <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top"><router-link to="/about"> Get Started</router-link></button>
+  <h1 class="w3-margin w3-jumbo"> Coding Comrades</h1>
+  <p class="w3-xlarge"> Efficient Resources</p><router-link to="/about1"> 
+  <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Get Started</button></router-link>
 </header>
 
 <!-- First Grid -->
 <div class="w3-row-padding w3-padding-64 w3-container">
   <div class="w3-content">
     <div class="w3-twothird">
-      <h1>Lorem Ipsum</h1>
-      <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
-
+      <h1>THEME</h1>
+      <h5 class="w3-padding-32">With the increased use of virtual platforms for education and learning these days, work upon ideas which will help students, mentors and learners increase the productivity of education by easing the processes of learning, mentoring and teaching.</h5>
+<!-- 
       <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
         occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat.</p>
+        laboris nisi ut aliquip ex ea commodo consequat.</p> -->
     </div>
 
     <div class="w3-third w3-center">
@@ -36,12 +36,13 @@
     </div>
 
     <div class="w3-twothird">
-      <h1>Lorem Ipsum</h1>
-      <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
-
+      <h1>AGENDA</h1>
+      <h5 class="w3-padding-32">Providing efficient and complete Resources:  To ease the process of learning.
+Filtering out the most recommended resources: To increase the productivity of education.</h5>
+<!-- 
       <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
         occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat.</p>
+        laboris nisi ut aliquip ex ea commodo consequat.</p> -->
     </div>
   </div>
 </div>
@@ -60,7 +61,7 @@
     <i class="fa fa-twitter w3-hover-opacity"></i>
     <i class="fa fa-linkedin w3-hover-opacity"></i>
  </div>
- <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+ <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">Coding Combrades</a></p>
 </footer>
 
    </div>
@@ -71,4 +72,8 @@ export default {
   name: "HelloWorld",
   
 };
-</script>
+</script><style scoped>
+header{
+  background-image: url('https://www.pixelstalk.net/wp-content/uploads/2016/07/Computer-Science-HD-Images.jpg');
+}
+</style>
