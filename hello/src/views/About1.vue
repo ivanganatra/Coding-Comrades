@@ -14,11 +14,12 @@
 </nav>
         <h1></h1>
          <div id="con">
-     <div v-for="(index) in list" :key="index" :index="iddd">
+           <!-- {{list}} -->
+     <div v-for="index in list" :key="index" :index="iddd">
       <router-link :to="{ name: 'About2', params: {id:index.id} }" :key="$route.path">
           <!-- {{index}} -->
        
-
+<!-- {{index.id}} -->
      <div class="w3-row-padding w3-center w3-margin-top">
 <div class="w3-third">
   <div class="w3-card w3-container" style="min-height:460px; width: 270px;">
