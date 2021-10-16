@@ -15,7 +15,7 @@ Then open this page in your favorite browser:
 2. Using `http-server` node module from the root of the JSON Form project:
 ```bash
 npm install -g http-server
-http-server
+
 ```
 Then open this in page in your favorite browser:
 [`http://localhost:8080/playground/`](http://localhost:8080/playground/)
