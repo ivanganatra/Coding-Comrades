@@ -5,8 +5,8 @@
 
   <div class="w3-bar-block">
     <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
-    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">{{idd}}</a> 
-    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"></a> 
+    <!-- <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">{{idd}}</a> 
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"></a>  -->
     <!-- <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Designers</a>  -->
     <!-- <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Packages</a>  -->
     <!-- <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a> -->
@@ -22,13 +22,13 @@
 <!-- {{index.id}} -->
      <div class="w3-row-padding w3-center w3-margin-top">
 <div class="w3-third">
-  <div class="w3-card w3-container" style="min-height:460px; width: 270px;">
+  <div class="w3-card w3-container" id="boxx" style="min-height:460px; width: 270px;">
   <h3>{{index.heading}}</h3><br>
   <i class="fa fa-desktop w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
   <p>{{index.heading}}</p>
-  <p>Mobile first fluid grid</p>
-  <p>Fits any screen sizes</p>
-  <p>PC Tablet and Mobile</p>
+  <p>{{index.link[0].heading}}</p>
+  <p>{{index.link[0].course}}</p>
+  <p>{{index.link[0].resource}}</p>
   </div>
 </div></div></router-link> </div>
 
@@ -45,6 +45,7 @@ export default {
         return{
           
            list:[],
+           image: ["https://s7280.pcdn.co/wp-content/uploads/2016/06/database-blue.png","https:encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdGP8UXLdKqXtHPYitxxRKOA9zgJfNTkD7HQ&usqp=CAU","https://upload.wikimedia.org/wikipedia/commons/6/6c/Logo_Novius_OS.jpg","https://www.tutorialspoint.com/basics_of_computer_science/images/computer_networking.jpg","https://online.crbtech.in/wp-content/uploads/2019/03/C-programming-1024x530.png",]
            
            
             
@@ -73,5 +74,11 @@ h1{
   display: flex;
   flex-wrap: wrap;
   margin-left: 200px;
+}#boxx:hover {
+  box-shadow: 12px 8px 16px 12px rgba(0,0,0,0.2);
+}
+p{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  text-align: left;
 }
 </style>
