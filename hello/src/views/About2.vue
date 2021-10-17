@@ -21,7 +21,7 @@
             <!-- <li><a href="#">Home</a></li> -->
             <li><h3 >Sort By</h3>
                 <ul class="subMenu">
-                    <li><a >Rating</a></li>
+                    <li><a @click="sortbyr">Rating</a></li>
                     <!-- <li><a href="#">course</a></li> -->
                     <li><a >Course</a>
                         <ul class="SuperSubMenu">
@@ -44,12 +44,15 @@
 
         </div>
 
-<div id="head" v-for="item in ll" :key="item">
+<div  >
         
        <!-- {{list.link[0].link}} -->
        
-    <a :href="item.link" target="blank"><button id="btn5" class="button button5">{{item.heading}}</button></a>
-      
+    <!-- <a :href="item.link/" target="blank"><button id="btn5" class="button button5">{{item.heading}}</button></a> -->
+      <div  id="head" class="list-group" v-for="item in ll" :key="item">
+  <a :href="item.link" target="blank" class="list-group-item list-group-item-action" id="hower">
+    {{item.heading}}
+  </a> </div>
          
        <!-- {{ll}} -->
          <div id="con">
@@ -104,7 +107,10 @@ export default {
         // console.log("filter");
        
       } )
-    }
+    },sortbyr(){
+      this.ll.sort((a,b)=>console.log(a,b))
+      console.log("sorted")
+      }
   },
 
 }
@@ -190,18 +196,21 @@ li:hover>a{
   /* margin:auto; */
   line-height: 50px;
   /* border: 2px solid bl/anchedalmond; */
-  width: 50%;
+  width: 40%;
+  
   margin: auto;
   margin-left:360px;
   display: flex;
+  margin-bottom: 10px
   
   
   /* width: 60%; */
 /* margin-left: -1///80px; */
 
 }
+#hower:hover{background: rgb(159, 215, 230)}
 #btn5 {
-    background-image: url('https://www.pixelstalk.net/wp-content/uploads/2016/07/Computer-Science-HD-Images.jpg');
+    /* background-image: url('https://www.pixelstalk.net/wp-content/uploads/2016/07/Computer-Science-HD-Images.jpg'); */
 color: white
 }
 #cont{
@@ -217,8 +226,15 @@ color: white
   background-color: #9fbabe;
   color: rgb(65, 221, 195);
 }
+#hower{
+  text-align: left;
+  font-size: 20px;
+  /* font-weight: bold; */
+}
 #h{
-  /* border:2px solid black; */
+  /* border:2px solid rgb(236, 236, 236); */
+  background: #ffffff;
+  box-shadow: 2px 2px solid #ffffff;
   display: flex;
   /* justify-content: space-around; */
   /* align-content: space-around; */
