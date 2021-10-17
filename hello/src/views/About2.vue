@@ -19,7 +19,7 @@
    <nav id="nav">
         <ul class="mainMenu">
             <!-- <li><a href="#">Home</a></li> -->
-            <li><h3 style="margin-left:20px">Sort By</h3>
+            <li><h3 >Sort By</h3>
                 <ul class="subMenu">
                     <li><a @click="sortbyr">Rating</a></li>
                     <!-- <li><a href="#">course</a></li> -->
@@ -44,12 +44,15 @@
 
         </div>
 
-<div id="head" v-for="item in ll" :key="item">
+<div  >
         
        <!-- {{list.link[0].link}} -->
        
-    <a :href="item.link" target="blank"><button id="btn5" class="button button5">{{item.heading}}</button></a>
-      
+    <!-- <a :href="item.link/" target="blank"><button id="btn5" class="button button5">{{item.heading}}</button></a> -->
+      <div  id="head" class="list-group" v-for="item in ll" :key="item">
+  <a :href="item.link" target="blank" class="list-group-item list-group-item-action" id="hower">
+    {{item.heading}}
+  </a> </div>
          
        <!-- {{ll}} -->
          <div id="con">
@@ -107,8 +110,7 @@ export default {
     },sortbyr(){
       this.ll.sort((a,b) => {
                     return a.rating - b.rating;
-                })
-      // console.log(this.ll)
+                 })
       }
   },
 
@@ -195,21 +197,22 @@ li:hover>a{
   /* margin:auto; */
   line-height: 50px;
   /* border: 2px solid bl/anchedalmond; */
-  width: 50%;
+  width: 40%;
+  
   margin: auto;
-  margin-left:280px;
+  margin-left:360px;
   display: flex;
+  margin-bottom: 10px
   
   
   /* width: 60%; */
 /* margin-left: -1///80px; */
 
 }
+#hower:hover{background: rgb(159, 215, 230)}
 #btn5 {
-    background-image: url('https://www.pixelstalk.net/wp-content/uploads/2016/07/Computer-Science-HD-Images.jpg');
-color: white;
-width: 500px;
-text-align: left;
+    /* background-image: url('https://www.pixelstalk.net/wp-content/uploads/2016/07/Computer-Science-HD-Images.jpg'); */
+color: white
 }
 #cont{
   /* border:2px solid blue; */
@@ -224,18 +227,23 @@ text-align: left;
   background-color: #9fbabe;
   color: rgb(65, 221, 195);
 }
+#hower{
+  text-align: left;
+  font-size: 20px;
+  /* font-weight: bold; */
+}
 #h{
-  /* border:2px solid black; */
+  /* border:2px solid rgb(236, 236, 236); */
+  background: #ffffff;
+  box-shadow: 2px 2px solid #ffffff;
   display: flex;
   /* justify-content: space-around; */
   /* align-content: space-around; */
   width: 70%;
-  margin-left: 300px;
+  margin-left: 380px;
   margin-bottom: 20px;
   
  
 }
 </style>
-
-
-// ["https://s7280.pcdn.co/wp-content/uploads/2016/06/database-blue.png",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdGP8UXLdKqXtHPYitxxRKOA9zgJfNTkD7HQ&usqp=CAU","https://upload.wikimedia.org/wikipedia/commons/6/6c/Logo_Novius_OS.jpg","https://www.tutorialspoint.com/basics_of_computer_science/images/computer_networking.jpg","https://online.crbtech.in/wp-content/uploads/2019/03/C-programming-1024x530.png",]
+    
