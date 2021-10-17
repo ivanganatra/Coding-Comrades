@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>FOLDER CREATOR</title>
+  <link rel="stylesheet" type="text/css" href="deps/opt/bootstrap.css" />
+</head>
+<body>
+  <h1>JSON FORM TO CREATE FOLDERS AND SUBFOLDERS</h1>
+  <form></form>
+  <div id="res" class="alert"></div>
+  <script type="text/javascript" src="deps/jquery.min.js"></script>
+  <script type="text/javascript" src="deps/underscore.js"></script>
+  <script type="text/javascript" src="deps/opt/jsv.js"></script>
+  <script type="text/javascript" src="lib/jsonform.js"></script>
+  <script type="text/javascript">
+    $('form').jsonForm({
+ "schema": {
+    "id": {
+      "title": "ID",
+      "type": "integer"
+    },
+    "heading": {
+      "title": "HEADING",
+      "type": "string"
+    },
+    "link": {
+      "title": "LINK",
+      "type": "string",
+      "default":"None"
+    },
+    "leafnode": {
+      "title": "IS LIST OF RESOURCE",
+      "type": "checkbox"
+    },
+    "subheading": {
+      "type": "array",
+      "title":"LIST OF SUBHEADINGS",
+      "items": {
+        "type": "object",
+        "properties": {
+          "subheading": {
+            "type": "string",
+            "title": "Sub Heading",
+          },
+        }
+      }
+    }
+  },
+  onSubmit: function (errors, values) {
+        if (errors) {
+          $('#res').html('<p>I beg your pardon?</p>');
+        } else {
+          $('#res').html( JSON.stringify(values, null, 4));
+        }
+      }
+    });
+  </script>
+</body>
+</html>
